@@ -1,0 +1,35 @@
+.bootstrap-form-with-validation {
+}
+
+.text-input {
+  margin-bottom: 15px;
+  width: 200px;
+  text-align: left;
+  border-radius: 7px;
+}
+
+.form-label {
+  display: grid;
+}
+
+textarea {
+  color: var(--bs-black);
+}
+
+.nom-case {
+  margin-left: 10px;
+}
+
+.os-pl {
+  padding-left: 15px;
+}
+
+#arrive {
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+#non-remorquer {
+  margin-bottom: 20px;
+}
+
