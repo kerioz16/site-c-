@@ -1,11 +1,12 @@
-.bootstrap-form-with-validation {
-}
+
 
 .text-input {
   margin-bottom: 15px;
   width: 200px;
   text-align: left;
   border-radius: 7px;
+  border-width: 2px;
+  border-color: var(--bs-red);
 }
 
 .form-label {
@@ -32,4 +33,34 @@ textarea {
 #non-remorquer {
   margin-bottom: 20px;
 }
+
+.bg-primary {
+  background-color: #cf0000 !important;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color: #d60000;
+}
+
+.check {
+  color: var(--bs-red);
+  border-width: 2px;
+  border-color: var(--bs-red);
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #770000;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgba(102,73,73,0.25);
+}
+
+@media print
+{
+  .btnImpression
+  {
+    display: none;
+  }
+} 
 

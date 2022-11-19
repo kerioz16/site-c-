@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -14,12 +15,12 @@
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
-        <div class="container"><a class="navbar-brand" href="#page-top">Brand</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="container"><a class="navbar-brand" href="#page-top">Ordre de service</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">OS VR</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">OS TCP</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">OS VM</a></li>
                 </ul>
             </div>
         </div>
@@ -33,15 +34,176 @@
                         <option value="14">Le Plessis</option>
                     </optgroup>
                 </select></label><label class="form-label">Immatriculation<input class="form-control text-input" type="text" id="immatriculation" style="width: 200px;"></label><label class="form-label">Véhicule remorqué ?</label>
-            <div class="form-check" id="remorquer"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">oui</label></div>
-            <div class="form-check" id="non-remorquer"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">non</label></div><label class="form-label">Kilométrage de départ<input class="form-control text-input" type="number" id="kilometrage-depart"></label><label class="form-label">Kilométrage d'arrivé<input class="form-control text-input" type="number" id="kilometrage-arrive"></label><label class="form-label">Prestation :</label>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3">Convoyage avec lavage</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-4"><label class="form-check-label" for="formCheck-4">Chrono numérique</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-5"><label class="form-check-label" for="formCheck-5">Limiteur</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-6"><label class="form-check-label" for="formCheck-6">Extincteur</label></div>
-            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-7"><label class="form-check-label" for="formCheck-7">Convoyage sans lavage</label></div>
+            <div class="form-check" id="remorquer"><input class="form-check-input check" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">oui</label></div>
+            <div class="form-check" id="non-remorquer"><input class="form-check-input check" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">non</label></div><label class="form-label">Kilométrage de départ<input class="form-control text-input" type="number" id="kilometrage-depart"></label><label class="form-label">Kilométrage d'arrivé<input class="form-control text-input" type="number" id="kilometrage-arrive"></label><label class="form-label">Prestation :</label>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3">Convoyage avec lavage</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-4"><label class="form-check-label" for="formCheck-4">Chrono numérique</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-5"><label class="form-check-label" for="formCheck-5">Limiteur</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-6"><label class="form-check-label" for="formCheck-6">Extincteur</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-7"><label class="form-check-label" for="formCheck-7">Convoyage sans&nbsp; lavage</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-10"><label class="form-check-label" for="formCheck-10">Chrono analogique</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-9"><label class="form-check-label" for="formCheck-9">Lavage</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-8"><label class="form-check-label" for="formCheck-8">Visite VGP</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-12"><label class="form-check-label" for="formCheck-12">Banc de freinage</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-11"><label class="form-check-label" for="formCheck-11">EAD</label></div>
+            <label class="form-label">Nom du client à facturer<input class="form-control text-input" type="text" id="facturation" style="width: 200px;"></label>
+
+            <label class="form-label">Prise en charge :<input class="form-control text-input" id="date" type="date"></label>
+            <label class="form-label">Heure de prise en charge<input class="form-control text-input" type="text" id="heure" style="width: 200px;"></label>
+
+            <label class="form-label">Signature convoyeur<canvas style="border: 1px solid #999" id="signature1" width="200" height="150"></canvas></label>
+            <button type="button" class="btnImpression" onclick="effacer1();" id="efface1">Effacer</button>&nbsp;
+            <br/><br/>
+            <label class="form-label">Signature client<canvas style="border: 1px solid #999" id="signature2" width="200" height="150"></canvas></label>
+            <button type="button" class="btnImpression" onclick="effacer2();" id="efface2">Effacer</button>&nbsp;
+            <br/><br/>
+            
+            <label class="form-label">Retour camion :<input class="form-control text-input" id="date-retour" type="date"></label>
+            <label class="form-label">Heure de retour :<input class="form-control text-input" type="text" id="heure-retour" style="width: 200px;"></label>
+                
+            <br><label class="form-label">Signature convoyeur<canvas style="border: 1px solid #999" id="signature3" width="200" height="150"></canvas></label>
+            <button type="button" class="btnImpression" onclick="effacer3();" id="efface3">Effacer</button>&nbsp;
+            <br/><br/>
+            <label class="form-label">Signature client<canvas style="border: 1px solid #999" id="signature4" width="200" height="150"></canvas></label>
+            <button type="button" class="btnImpression" onclick="effacer4();" id="efface4">Effacer</button>&nbsp;
+            <button onclick="apercu();" class="btnImpression">Génerer</button>
+
+
         </form>
     </section>
+    <script type="text/javascript">
+                
+
+        var zoneSigner1 = document.getElementById("signature1");
+        var zoneSigner2 = document.getElementById("signature2");
+        var zoneSigner3 = document.getElementById("signature3");
+        var zoneSigner4 = document.getElementById("signature4");
+
+        zoneSigner1.addEventListener('mousedown', sourisBas1);
+        zoneSigner1.addEventListener('mousemove', sourisBouge1);
+        zoneSigner1.addEventListener('mouseup', sourisHaut);
+
+        zoneSigner2.addEventListener('mousedown', sourisBas2);
+        zoneSigner2.addEventListener('mousemove', sourisBouge2);
+        zoneSigner2.addEventListener('mouseup', sourisHaut);
+
+        zoneSigner3.addEventListener('mousedown', sourisBas3);
+        zoneSigner3.addEventListener('mousemove', sourisBouge3);
+        zoneSigner3.addEventListener('mouseup', sourisHaut);
+
+        zoneSigner4.addEventListener('mousedown', sourisBas4);
+        zoneSigner4.addEventListener('mousemove', sourisBouge4);
+        zoneSigner4.addEventListener('mouseup', sourisHaut);
+
+        var trace1 = zoneSigner1.getContext('2d');
+        var trace2 = zoneSigner2.getContext('2d');
+        var trace3 = zoneSigner3.getContext('2d');
+        var trace4 = zoneSigner4.getContext('2d');
+
+        var started = false;
+
+        function sourisBas1(ev)
+        {
+            started = true;
+            trace1.beginPath();
+            trace1.moveTo(ev.offsetX, ev.offsetY);
+        }
+
+        function sourisBas2(ev)
+        {
+            started = true;
+            trace2.beginPath();
+            trace2.moveTo(ev.offsetX, ev.offsetY);
+        }
+
+        function sourisBas3(ev)
+        {
+            started = true;
+            trace3.beginPath();
+            trace3.moveTo(ev.offsetX, ev.offsetY);
+        }
+
+        function sourisBas4(ev)
+        {
+            started = true;
+            trace4.beginPath();
+            trace4.moveTo(ev.offsetX, ev.offsetY);
+        }
+        
+        function sourisBouge1(ev)
+        {
+            if (started)
+            {
+                trace1.lineTo(ev.offsetX, ev.offsetY);
+                trace1.stroke();
+            }
+        }
+
+        function sourisBouge2(ev)
+        {
+            if (started)
+            {
+                trace2.lineTo(ev.offsetX, ev.offsetY);
+                trace2.stroke();
+            }
+        }
+
+        function sourisBouge3(ev)
+        {
+            if (started)
+            {
+                trace3.lineTo(ev.offsetX, ev.offsetY);
+                trace3.stroke();
+            }
+        }
+
+        function sourisBouge4(ev)
+        {
+            if (started)
+            {
+                trace4.lineTo(ev.offsetX, ev.offsetY);
+                trace4.stroke();
+            }
+        }
+
+        function sourisHaut(ev)
+        {
+            started = false;
+        }
+
+        function effacer1()
+        {
+            trace1.clearRect(0, 0, zoneSigner1.width, zoneSigner1.height);
+        }
+
+        function effacer2()
+        {
+            trace2.clearRect(0, 0, zoneSigner2.width, zoneSigner2.height);
+        }
+
+        function effacer3()
+        {
+            trace3.clearRect(0, 0, zoneSigner3.width, zoneSigner3.height);
+        }
+
+        function effacer4()
+        {
+            trace4.clearRect(0, 0, zoneSigner4.width, zoneSigner4.height);
+        }
+
+        function apercu()
+        {
+            zoneSigner1.style.cssText = "border: none;";
+            zoneSigner2.style.cssText = "border: none;";
+            zoneSigner3.style.cssText = "border: none;";
+            zoneSigner4.style.cssText = "border: none;";
+            window.print();
+        }
+            
+
+
+            
+        </script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/freelancer.js"></script>
 </body>
