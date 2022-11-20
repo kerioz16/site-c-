@@ -67,6 +67,10 @@
             <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-8"><label class="form-check-label" for="formCheck-8">Visite VGP</label></div>
             <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-12"><label class="form-check-label" for="formCheck-12">Banc de freinage</label></div>
             <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-11"><label class="form-check-label" for="formCheck-11">EAD</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-13"><label class="form-check-label" for="formCheck-13">Chargement</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-14"><label class="form-check-label" for="formCheck-14">Retour Heppner</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-15"><label class="form-check-label" for="formCheck-15">Retour Geodis</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-16"><label class="form-check-label" for="formCheck-16">V.G.P hayon</label></div>
 
             <label class="form-label">Nom du client à facturer<input class="form-control text-input" type="text" id="facturation" style="width: 200px;"></label>
             
@@ -97,7 +101,7 @@
     <script type="text/javascript">
                 
 
-        var zoneSigner1 = document.getElementById("signature1");
+        /*var zoneSigner1 = document.getElementById("signature1");
         var zoneSigner2 = document.getElementById("signature2");
         var zoneSigner3 = document.getElementById("signature3");
         var zoneSigner4 = document.getElementById("signature4");
@@ -221,7 +225,103 @@
             zoneSigner3.style.cssText = "border: none;";
             zoneSigner4.style.cssText = "border: none;";
             window.print();
-        }
+        }*/$
+
+        var Signature = {
+
+//Récupère la position du pointeur/doigt
+getPosition: function (e, canvas){
+    var rect = canvas.getBoundingClientRect(),
+        eElement = e.changedTouches? e.changedTouches[0]:e;
+    return {
+    posX : (eElement.clientX - rect.left) / (rect.right - rect.left) * canvas.width,
+    posY : (eElement.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height
+    };
+},
+
+//Commence à déssiner (quand on pose le pointeur ou le doigt sur le canvas)
+startDessin: function (e){ 
+    e.preventDefault(); 
+    var canvas = e.currentTarget,
+        position = Signature.getPosition(e, canvas);
+    canvas.posX = position.posX;
+    canvas.posY = position.posY;
+    Signature.dessiner = true;
+    document.getElementById("valider").disabled = false;
+    capturer(false);
+},
+
+//Dessine
+dessiner: function (e){ 
+    var canvas = e.currentTarget,
+        ctx = null, position = null;
+    if(canvas.dessiner == false){
+      return false;
+    }
+    position = Signature.getPosition(e, canvas);
+    ctx = canvas.getContext('2d');
+    
+    //dessine
+    ctx.strokeStyle = 'red';
+    ctx.lineWidth = 3;
+    ctx.beginPath(); 
+    ctx.moveTo((canvas.posX), canvas.posY);
+    ctx.lineTo(position.posX, position.posY);
+    ctx.stroke();
+    
+    canvas.posX = position.posX;
+    canvas.posY = position.posY; 
+},
+
+//Arrêt du dessin (levé du stylo (pointeur/doigt))
+stopDessin: function (e){
+    var canvas = e.currentTarget;
+    Signature.dessiner = false; 
+    capturer(true);
+},
+
+//Effacer le dessin
+nettoyer: function (){
+    var  canvas = document.getElementById("signature1"),
+        ctx = canvas.getContext('2d');
+    ctx.clearRect(0,0,canvas.width,canvas.height); 
+    document.getElementById("valider").disabled = true;
+    capturer(false);
+},
+
+//Récupere le Canvas sous forme d'image
+capturer: function (dessinCanvas){
+    var capture = document.getElementById("capture");
+    capture.innerHTML = '';
+    if(dessinCanvas == true){ 
+    var image = document.createElement('img'),
+        canvas = document.getElementById("canvas");
+    image.src = canvas.toDataURL("img/png");
+    capture.appendChild(image);
+    };
+},
+
+//Initialise le canvas
+initCanvas: function (){
+    var canvas = document.getElementById("canvas");
+    document.getElementById("valider").disabled = true;
+    Signature.dessiner = false;
+    canvas.width = 250 ;
+    canvas.height = 125;
+    ctx = canvas.getContext('2d'); 
+    canvas.addEventListener("mousedown", Signature.startDessin());
+    canvas.addEventListener("mouseup", Signature.stopDessin());
+    canvas.addEventListener("mousemove", Signature.dessiner());
+    canvas.addEventListener("touchstart", Signature.startDessin());
+    canvas.addEventListener("touchend", Signature.stopDessin());
+    canvas.addEventListener("touchmove", Signature.dessiner()); 
+    document.getElementById("effacer").addEventListener("click", nettoyer);
+}
+}
+
+document.addEventListener('DOMContentLoaded',function(){
+Signature.initCanvas();
+});
         
         </script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
