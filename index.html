@@ -24,7 +24,9 @@
             </div>
         </div>
     </nav>
-    <header class="text-center text-white bg-primary masthead"></header>
+    <header class="text-center text-white bg-primary masthead">
+        <img src="assets/img/c+.png" width="333" height="73" />
+    </header>
     <section class="form-label" style="text-align: left;">
         <form class="os-pl"><label class="form-label">Type d'ordre de service<select class="form-select select" id="type-os">
                     <option value="" selected="">VM</option>
@@ -41,7 +43,20 @@
                     </optgroup>
                 </select></label><label class="form-label">Immatriculation<input class="form-control text-input" type="text" id="immatriculation" style="width: 200px;"></label><label class="form-label">Véhicule remorqué ?</label>
             <div class="form-check" id="remorquer"><input class="form-check-input check" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">oui</label></div>
-            <div class="form-check" id="non-remorquer"><input class="form-check-input check" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">non</label></div><label class="form-label">Kilométrage de départ<input class="form-control text-input" type="number" id="kilometrage-depart"></label><label class="form-label">Kilométrage d'arrivé<input class="form-control text-input" type="number" id="kilometrage-arrive"></label><label class="form-label">Prestation :</label>
+            <div class="form-check" id="non-remorquer"><input class="form-check-input check" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">non</label></div>
+
+            <label class="form-label">réservoir d&#39;essence<select id="essence" class="form-select select">
+                <option value>1/4</option>
+                <option value>1/2</option>
+                <option value>3/4</option>
+                <option value selected>1/1</option>
+            </select></label>
+
+            <label class="form-label">Kilométrage de départ<input class="form-control text-input" type="number" id="kilometrage-depart"></label>
+
+            <label class="form-label">Kilométrage d'arrivé<input class="form-control text-input" type="number" id="kilometrage-arrive"></label>
+
+            <label class="form-label">Prestation :</label>
             <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3">Convoyage avec lavage</label></div>
             <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-4"><label class="form-check-label" for="formCheck-4">Chrono numérique</label></div>
             <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-5"><label class="form-check-label" for="formCheck-5">Limiteur</label></div>

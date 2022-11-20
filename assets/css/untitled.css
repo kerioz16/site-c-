@@ -1,5 +1,4 @@
-.bootstrap-form-with-validation {
-}
+
 
 .text-input {
   margin-bottom: 15px;
@@ -36,7 +35,7 @@ textarea {
 }
 
 .bg-primary {
-  background-color: #cf0000 !important;
+  background-color: #000000 !important;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
