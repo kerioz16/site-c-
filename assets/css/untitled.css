@@ -1,4 +1,5 @@
-
+.bootstrap-form-with-validation {
+}
 
 .text-input {
   margin-bottom: 15px;
@@ -56,11 +57,9 @@ textarea {
   box-shadow: 0 0 0 .25rem rgba(102,73,73,0.25);
 }
 
-@media print
-{
-  .btnImpression
-  {
-    display: none;
-  }
-} 
+.select {
+  border-width: 2px;
+  border-color: var(--bs-red);
+  width: 200px;
+}
 

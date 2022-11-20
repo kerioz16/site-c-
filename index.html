@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -27,7 +26,14 @@
     </nav>
     <header class="text-center text-white bg-primary masthead"></header>
     <section class="form-label" style="text-align: left;">
-        <form class="os-pl"><label class="form-label">Nom<input class="form-control text-input" type="text" id="nom"></label><label class="form-label" style="display: grid;">Prénom<input class="form-control text-input" type="text" id="prenom" style="width: 200px;"></label><label class="form-label">Société de départ<input class="form-control text-input" type="text" id="depart" style="width: 200px;"></label><label class="form-label">société d'arrivé<select class="form-select" id="arrive">
+        <form class="os-pl"><label class="form-label">Type d'ordre de service<select class="form-select select" id="type-os">
+                    <option value="" selected="">VM</option>
+                    <option value="">VR</option>
+                    <option value="">TCP</option>
+                </select></label><label class="form-label">Nom convoyeur<select class="form-select select" id="nom">
+                    <option value="" selected="">Fabien Roger</option>
+                    <option value="">Gregory Bodin</option>
+                </select></label><label class="form-label">Société de départ<input class="form-control text-input" type="text" id="depart" style="width: 200px;"></label><label class="form-label">société d'arrivé<select class="form-select select" id="arrive">
                     <optgroup label="arrivé à">
                         <option value="12" selected="">Mitry Mory</option>
                         <option value="13">Villabé</option>
@@ -46,10 +52,11 @@
             <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-8"><label class="form-check-label" for="formCheck-8">Visite VGP</label></div>
             <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-12"><label class="form-check-label" for="formCheck-12">Banc de freinage</label></div>
             <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-11"><label class="form-check-label" for="formCheck-11">EAD</label></div>
-            <label class="form-label">Nom du client à facturer<input class="form-control text-input" type="text" id="facturation" style="width: 200px;"></label>
 
+            <label class="form-label">Nom du client à facturer<input class="form-control text-input" type="text" id="facturation" style="width: 200px;"></label>
+            
             <label class="form-label">Prise en charge :<input class="form-control text-input" id="date" type="date"></label>
-            <label class="form-label">Heure de prise en charge<input class="form-control text-input" type="text" id="heure" style="width: 200px;"></label>
+            <label class="form-label">Heure de prise en charge<input class="form-control text-input" id="heure" type="time"></label>
 
             <label class="form-label">Signature convoyeur<canvas style="border: 1px solid #999" id="signature1" width="200" height="150"></canvas></label>
             <button type="button" class="btnImpression" onclick="effacer1();" id="efface1">Effacer</button>&nbsp;
@@ -57,10 +64,11 @@
             <label class="form-label">Signature client<canvas style="border: 1px solid #999" id="signature2" width="200" height="150"></canvas></label>
             <button type="button" class="btnImpression" onclick="effacer2();" id="efface2">Effacer</button>&nbsp;
             <br/><br/>
-            
+
+
             <label class="form-label">Retour camion :<input class="form-control text-input" id="date-retour" type="date"></label>
-            <label class="form-label">Heure de retour :<input class="form-control text-input" type="text" id="heure-retour" style="width: 200px;"></label>
-                
+            <label class="form-label">Heure de retour :<input class="form-control text-input" id="heur-retour" type="time"></label>
+
             <br><label class="form-label">Signature convoyeur<canvas style="border: 1px solid #999" id="signature3" width="200" height="150"></canvas></label>
             <button type="button" class="btnImpression" onclick="effacer3();" id="efface3">Effacer</button>&nbsp;
             <br/><br/>
@@ -68,9 +76,9 @@
             <button type="button" class="btnImpression" onclick="effacer4();" id="efface4">Effacer</button>&nbsp;
             <button onclick="apercu();" class="btnImpression">Génerer</button>
 
-
         </form>
     </section>
+
     <script type="text/javascript">
                 
 
@@ -199,10 +207,7 @@
             zoneSigner4.style.cssText = "border: none;";
             window.print();
         }
-            
-
-
-            
+        
         </script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/freelancer.js"></script>
