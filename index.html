@@ -4,22 +4,30 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
+    <title>OS - Controle Plus.fr</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
-        <div class="container"><a class="navbar-brand" href="#page-top">Ordre de service</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="container"><a class="navbar-brand" href="#page-top">Ordre de service</a><button
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i
+                    class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">OS VR</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">OS TCP</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">OS VM</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#VR">OS VR</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#TCP">OS
+                            TCP</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#VM">OS VM</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -28,302 +36,238 @@
         <img src="assets/img/c+.png" width="333" height="73" />
     </header>
     <section class="form-label" style="text-align: left;">
-        <form class="os-pl"><label class="form-label">Type d'ordre de service<select class="form-select select" id="type-os">
+        <form class="os-pl"><label class="form-label">Type d'ordre de service<select class="form-select select"
+                    id="type-os">
                     <option value="" selected="">VM</option>
                     <option value="">VR</option>
                     <option value="">TCP</option>
                 </select></label><label class="form-label">Nom convoyeur<select class="form-select select" id="nom">
                     <option value="" selected="">Fabien Roger</option>
                     <option value="">Gregory Bodin</option>
-                </select></label><label class="form-label">Société de départ<input class="form-control text-input" type="text" id="depart" style="width: 200px;"></label><label class="form-label">société d'arrivé<select class="form-select select" id="arrive">
+                </select></label><label class="form-label">Société de départ<input class="form-control text-input"
+                    type="text" id="depart" style="width: 200px;"></label><label class="form-label">société
+                d'arrivé<select class="form-select select" id="arrive">
                     <optgroup label="arrivé à">
                         <option value="12" selected="">Mitry Mory</option>
                         <option value="13">Villabé</option>
                         <option value="14">Le Plessis</option>
                     </optgroup>
-                </select></label><label class="form-label">Immatriculation<input class="form-control text-input" type="text" id="immatriculation" style="width: 200px;"></label><label class="form-label">Véhicule remorqué ?</label>
-            <div class="form-check" id="remorquer"><input class="form-check-input check" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">oui</label></div>
-            <div class="form-check" id="non-remorquer"><input class="form-check-input check" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">non</label></div>
+                </select></label><label class="form-label">Immatriculation<input class="form-control text-input"
+                    type="text" id="immatriculation" style="width: 200px;"></label><label class="form-label">Véhicule
+                remorqué ?</label>
+            <div class="form-check" id="remorquer"><input class="form-check-input check" type="checkbox"
+                    id="formCheck-1"><label class="form-check-label" for="formCheck-1">oui</label></div>
+            <div class="form-check" id="non-remorquer"><input class="form-check-input check" type="checkbox"
+                    id="formCheck-2"><label class="form-check-label" for="formCheck-2">non</label></div>
 
             <label class="form-label">réservoir d&#39;essence<select id="essence" class="form-select select">
-                <option value>1/4</option>
-                <option value>1/2</option>
-                <option value>3/4</option>
-                <option value selected>1/1</option>
-            </select></label>
+                    <option value>1/4</option>
+                    <option value>1/2</option>
+                    <option value>3/4</option>
+                    <option value selected>1/1</option>
+                </select></label>
 
-            <label class="form-label">Kilométrage de départ<input class="form-control text-input" type="number" id="kilometrage-depart"></label>
+            <label class="form-label">Kilométrage de départ<input class="form-control text-input" type="number"
+                    id="kilometrage-depart"></label>
 
-            <label class="form-label">Kilométrage d'arrivé<input class="form-control text-input" type="number" id="kilometrage-arrive"></label>
+            <label class="form-label">Kilométrage d'arrivé<input class="form-control text-input" type="number"
+                    id="kilometrage-arrive"></label>
 
             <label class="form-label">Prestation :</label>
-            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3">Convoyage avec lavage</label></div>
-            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-4"><label class="form-check-label" for="formCheck-4">Chrono numérique</label></div>
-            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-5"><label class="form-check-label" for="formCheck-5">Limiteur</label></div>
-            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-6"><label class="form-check-label" for="formCheck-6">Extincteur</label></div>
-            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-7"><label class="form-check-label" for="formCheck-7">Convoyage sans&nbsp; lavage</label></div>
-            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-10"><label class="form-check-label" for="formCheck-10">Chrono analogique</label></div>
-            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-9"><label class="form-check-label" for="formCheck-9">Lavage</label></div>
-            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-8"><label class="form-check-label" for="formCheck-8">Visite VGP</label></div>
-            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-12"><label class="form-check-label" for="formCheck-12">Banc de freinage</label></div>
-            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-11"><label class="form-check-label" for="formCheck-11">EAD</label></div>
-            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-13"><label class="form-check-label" for="formCheck-13">Chargement</label></div>
-            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-14"><label class="form-check-label" for="formCheck-14">Retour Heppner</label></div>
-            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-15"><label class="form-check-label" for="formCheck-15">Retour Geodis</label></div>
-            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-16"><label class="form-check-label" for="formCheck-16">V.G.P hayon</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-3"><label
+                    class="form-check-label" for="formCheck-3">Convoyage avec lavage</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-4"><label
+                    class="form-check-label" for="formCheck-4">Chrono numérique</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-5"><label
+                    class="form-check-label" for="formCheck-5">Limiteur</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-6"><label
+                    class="form-check-label" for="formCheck-6">Extincteur</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-7"><label
+                    class="form-check-label" for="formCheck-7">Convoyage sans&nbsp; lavage</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-10"><label
+                    class="form-check-label" for="formCheck-10">Chrono analogique</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-9"><label
+                    class="form-check-label" for="formCheck-9">Lavage</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-8"><label
+                    class="form-check-label" for="formCheck-8">Visite VGP</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-12"><label
+                    class="form-check-label" for="formCheck-12">Banc de freinage</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-11"><label
+                    class="form-check-label" for="formCheck-11">EAD</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-13"><label
+                    class="form-check-label" for="formCheck-13">Chargement</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-14"><label
+                    class="form-check-label" for="formCheck-14">Retour Heppner</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-15"><label
+                    class="form-check-label" for="formCheck-15">Retour Geodis</label></div>
+            <div class="form-check"><input class="form-check-input check" type="checkbox" id="formCheck-16"><label
+                    class="form-check-label" for="formCheck-16">V.G.P hayon</label></div>
 
-            <label class="form-label">Nom du client à facturer<input class="form-control text-input" type="text" id="facturation" style="width: 200px;"></label>
-            
-            <label class="form-label">Prise en charge :<input class="form-control text-input" id="date" type="date"></label>
-            <label class="form-label">Heure de prise en charge<input class="form-control text-input" id="heure" type="time"></label>
+            <label class="form-label">Nom du client à facturer<input class="form-control text-input" type="text"
+                    id="facturation" style="width: 200px;"></label>
 
-            <label class="form-label">Signature convoyeur<canvas style="border: 1px solid #999" id="signature1" width="200" height="150"></canvas></label>
-            <button type="button" class="btnImpression" onclick="effacer1();" id="efface1">Effacer</button>&nbsp;
-            <br/><br/>
-            <label class="form-label">Signature client<canvas style="border: 1px solid #999" id="signature2" width="200" height="150"></canvas></label>
+            <label class="form-label">Prise en charge :<input class="form-control text-input" id="date"
+                    type="date"></label>
+            <label class="form-label">Heure de prise en charge<input class="form-control text-input" id="heure"
+                    type="time"></label>
+
+            <label class="form-label">Signature convoyeur<canvas style="border: 1px solid #999" id="sig-canvas"
+                    width="200" height="150"></canvas></label>
+            <button type="button" class="btnImpression" onclick="clearCanvas();" id="effacer">Effacer</button>&nbsp;
+            <button onclick="" class="btnImpression">Génerer</button>
+            <br /><br />
+            <label class="form-label">Signature client<canvas style="border: 1px solid #999" id="signature2" width="200"
+                    height="150"></canvas></label>
             <button type="button" class="btnImpression" onclick="effacer2();" id="efface2">Effacer</button>&nbsp;
-            <br/><br/>
+            <br /><br />
 
 
-            <label class="form-label">Retour camion :<input class="form-control text-input" id="date-retour" type="date"></label>
-            <label class="form-label">Heure de retour :<input class="form-control text-input" id="heur-retour" type="time"></label>
+            <label class="form-label">Retour camion :<input class="form-control text-input" id="date-retour"
+                    type="date"></label>
+            <label class="form-label">Heure de retour :<input class="form-control text-input" id="heur-retour"
+                    type="time"></label>
 
-            <br><label class="form-label">Signature convoyeur<canvas style="border: 1px solid #999" id="signature3" width="200" height="150"></canvas></label>
+            <br><label class="form-label">Signature convoyeur<canvas style="border: 1px solid #999" id="signature3"
+                    width="200" height="150"></canvas></label>
             <button type="button" class="btnImpression" onclick="effacer3();" id="efface3">Effacer</button>&nbsp;
-            <br/><br/>
-            <label class="form-label">Signature client<canvas style="border: 1px solid #999" id="signature4" width="200" height="150"></canvas></label>
+            <br /><br />
+            <label class="form-label">Signature client<canvas style="border: 1px solid #999" id="signature4" width="200"
+                    height="150"></canvas></label>
             <button type="button" class="btnImpression" onclick="effacer4();" id="efface4">Effacer</button>&nbsp;
             <button onclick="apercu();" class="btnImpression">Génerer</button>
 
         </form>
     </section>
 
+    <div id="footer">
+        © Controle Plus.fr - <a href="" style="color: rgb(255, 0, 0)"> Mention Légal</a>
+        <br />
+        Tous droit reservé.
+    </div>
+
     <script type="text/javascript">
-                
 
-        /*var zoneSigner1 = document.getElementById("signature1");
-        var zoneSigner2 = document.getElementById("signature2");
-        var zoneSigner3 = document.getElementById("signature3");
-        var zoneSigner4 = document.getElementById("signature4");
+        var canvas = document.getElementById("sig-canvas");
+        var ctx = canvas.getContext("2d");
+        ctx.strokeStyle = "#222222";
+        ctx.lineWith = 2;
 
-        zoneSigner1.addEventListener('mousedown', sourisBas1);
-        zoneSigner1.addEventListener('mousemove', sourisBouge1);
-        zoneSigner1.addEventListener('mouseup', sourisHaut);
+        // Set up mouse events for drawing
+        var drawing = false;
+        var mousePos = { x: 0, y: 0 };
+        var lastPos = mousePos;
+        canvas.addEventListener("mousedown", function (e) {
+            drawing = true;
+            lastPos = getMousePos(canvas, e);
+        }, false);
+        canvas.addEventListener("mouseup", function (e) {
+            drawing = false;
+        }, false);
+        canvas.addEventListener("mousemove", function (e) {
+            mousePos = getMousePos(canvas, e);
+        }, false);
 
-        zoneSigner2.addEventListener('mousedown', sourisBas2);
-        zoneSigner2.addEventListener('mousemove', sourisBouge2);
-        zoneSigner2.addEventListener('mouseup', sourisHaut);
-
-        zoneSigner3.addEventListener('mousedown', sourisBas3);
-        zoneSigner3.addEventListener('mousemove', sourisBouge3);
-        zoneSigner3.addEventListener('mouseup', sourisHaut);
-
-        zoneSigner4.addEventListener('mousedown', sourisBas4);
-        zoneSigner4.addEventListener('mousemove', sourisBouge4);
-        zoneSigner4.addEventListener('mouseup', sourisHaut);
-
-        var trace1 = zoneSigner1.getContext('2d');
-        var trace2 = zoneSigner2.getContext('2d');
-        var trace3 = zoneSigner3.getContext('2d');
-        var trace4 = zoneSigner4.getContext('2d');
-
-        var started = false;
-
-        function sourisBas1(ev)
-        {
-            started = true;
-            trace1.beginPath();
-            trace1.moveTo(ev.offsetX, ev.offsetY);
+        // Get the position of the mouse relative to the canvas
+        function getMousePos(canvasDom, mouseEvent) {
+            var rect = canvasDom.getBoundingClientRect();
+            return {
+                x: mouseEvent.clientX - rect.left,
+                y: mouseEvent.clientY - rect.top
+            };
         }
 
-        function sourisBas2(ev)
-        {
-            started = true;
-            trace2.beginPath();
-            trace2.moveTo(ev.offsetX, ev.offsetY);
+        // Get a regular interval for drawing to the screen
+        window.requestAnimFrame = (function (callback) {
+            return window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                window.oRequestAnimationFrame ||
+                window.msRequestAnimaitonFrame ||
+                function (callback) {
+                    window.setTimeout(callback, 1000 / 60);
+                };
+        })();
+
+        // Draw to the canvas
+        function renderCanvas() {
+            if (drawing) {
+                ctx.moveTo(lastPos.x, lastPos.y);
+                ctx.lineTo(mousePos.x, mousePos.y);
+                ctx.stroke();
+                lastPos = mousePos;
+            }
         }
 
-        function sourisBas3(ev)
-        {
-            started = true;
-            trace3.beginPath();
-            trace3.moveTo(ev.offsetX, ev.offsetY);
+        // Allow for animation
+        (function drawLoop() {
+            requestAnimFrame(drawLoop);
+            renderCanvas();
+        })();
+
+        // Set up touch events for mobile, etc
+        canvas.addEventListener("touchstart", function (e) {
+            mousePos = getTouchPos(canvas, e);
+            var touch = e.touches[0];
+            var mouseEvent = new MouseEvent("mousedown", {
+                clientX: touch.clientX,
+                clientY: touch.clientY
+            });
+            canvas.dispatchEvent(mouseEvent);
+        }, false);
+        canvas.addEventListener("touchend", function (e) {
+            var mouseEvent = new MouseEvent("mouseup", {});
+            canvas.dispatchEvent(mouseEvent);
+        }, false);
+        canvas.addEventListener("touchmove", function (e) {
+            var touch = e.touches[0];
+            var mouseEvent = new MouseEvent("mousemove", {
+                clientX: touch.clientX,
+                clientY: touch.clientY
+            });
+            canvas.dispatchEvent(mouseEvent);
+        }, false);
+
+        // Get the position of a touch relative to the canvas
+        function getTouchPos(canvasDom, touchEvent) {
+            var rect = canvasDom.getBoundingClientRect();
+            return {
+                x: touchEvent.touches[0].clientX - rect.left,
+                y: touchEvent.touches[0].clientY - rect.top
+            };
         }
 
-        function sourisBas4(ev)
-        {
-            started = true;
-            trace4.beginPath();
-            trace4.moveTo(ev.offsetX, ev.offsetY);
-        }
+        // Prevent scrolling when touching the canvas
+        document.body.addEventListener("touchstart", function (e) {
+            if (e.target == canvas) {
+                //e.preventDefault();
+                document.documentElement.style.overflow = 'hidden';
+            }
+            
+        }, false);
+        document.body.addEventListener("touchend", function (e) {
+            if (e.target == canvas) {
+                //e.preventDefault();
+                document.documentElement.style.overflow = 'visible';
+            }
+        }, false);
+        document.body.addEventListener("touchmove", function (e) {
+            if (e.target == canvas) {
+                //e.preventDefault();
+                document.documentElement.style.overflow = 'hidden';
+            }
+        }, false);
+
         
-        function sourisBouge1(ev)
-        {
-            if (started)
-            {
-                trace1.lineTo(ev.offsetX, ev.offsetY);
-                trace1.stroke();
-            }
+
+        function clearCanvas() {
+            canvas.width = canvas.width;
         }
 
-        function sourisBouge2(ev)
-        {
-            if (started)
-            {
-                trace2.lineTo(ev.offsetX, ev.offsetY);
-                trace2.stroke();
-            }
-        }
+        var dataUrl = canvas.toDataURL();
+       
 
-        function sourisBouge3(ev)
-        {
-            if (started)
-            {
-                trace3.lineTo(ev.offsetX, ev.offsetY);
-                trace3.stroke();
-            }
-        }
 
-        function sourisBouge4(ev)
-        {
-            if (started)
-            {
-                trace4.lineTo(ev.offsetX, ev.offsetY);
-                trace4.stroke();
-            }
-        }
-
-        function sourisHaut(ev)
-        {
-            started = false;
-        }
-
-        function effacer1()
-        {
-            trace1.clearRect(0, 0, zoneSigner1.width, zoneSigner1.height);
-        }
-
-        function effacer2()
-        {
-            trace2.clearRect(0, 0, zoneSigner2.width, zoneSigner2.height);
-        }
-
-        function effacer3()
-        {
-            trace3.clearRect(0, 0, zoneSigner3.width, zoneSigner3.height);
-        }
-
-        function effacer4()
-        {
-            trace4.clearRect(0, 0, zoneSigner4.width, zoneSigner4.height);
-        }
-
-        function apercu()
-        {
-            zoneSigner1.style.cssText = "border: none;";
-            zoneSigner2.style.cssText = "border: none;";
-            zoneSigner3.style.cssText = "border: none;";
-            zoneSigner4.style.cssText = "border: none;";
-            window.print();
-        }*/$
-
-        var Signature = {
-
-//Récupère la position du pointeur/doigt
-getPosition: function (e, canvas){
-    var rect = canvas.getBoundingClientRect(),
-        eElement = e.changedTouches? e.changedTouches[0]:e;
-    return {
-    posX : (eElement.clientX - rect.left) / (rect.right - rect.left) * canvas.width,
-    posY : (eElement.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height
-    };
-},
-
-//Commence à déssiner (quand on pose le pointeur ou le doigt sur le canvas)
-startDessin: function (e){ 
-    e.preventDefault(); 
-    var canvas = e.currentTarget,
-        position = Signature.getPosition(e, canvas);
-    canvas.posX = position.posX;
-    canvas.posY = position.posY;
-    Signature.dessiner = true;
-    document.getElementById("valider").disabled = false;
-    capturer(false);
-},
-
-//Dessine
-dessiner: function (e){ 
-    var canvas = e.currentTarget,
-        ctx = null, position = null;
-    if(canvas.dessiner == false){
-      return false;
-    }
-    position = Signature.getPosition(e, canvas);
-    ctx = canvas.getContext('2d');
-    
-    //dessine
-    ctx.strokeStyle = 'red';
-    ctx.lineWidth = 3;
-    ctx.beginPath(); 
-    ctx.moveTo((canvas.posX), canvas.posY);
-    ctx.lineTo(position.posX, position.posY);
-    ctx.stroke();
-    
-    canvas.posX = position.posX;
-    canvas.posY = position.posY; 
-},
-
-//Arrêt du dessin (levé du stylo (pointeur/doigt))
-stopDessin: function (e){
-    var canvas = e.currentTarget;
-    Signature.dessiner = false; 
-    capturer(true);
-},
-
-//Effacer le dessin
-nettoyer: function (){
-    var  canvas = document.getElementById("signature1"),
-        ctx = canvas.getContext('2d');
-    ctx.clearRect(0,0,canvas.width,canvas.height); 
-    document.getElementById("valider").disabled = true;
-    capturer(false);
-},
-
-//Récupere le Canvas sous forme d'image
-capturer: function (dessinCanvas){
-    var capture = document.getElementById("capture");
-    capture.innerHTML = '';
-    if(dessinCanvas == true){ 
-    var image = document.createElement('img'),
-        canvas = document.getElementById("canvas");
-    image.src = canvas.toDataURL("img/png");
-    capture.appendChild(image);
-    };
-},
-
-//Initialise le canvas
-initCanvas: function (){
-    var canvas = document.getElementById("canvas");
-    document.getElementById("valider").disabled = true;
-    Signature.dessiner = false;
-    canvas.width = 250 ;
-    canvas.height = 125;
-    ctx = canvas.getContext('2d'); 
-    canvas.addEventListener("mousedown", Signature.startDessin());
-    canvas.addEventListener("mouseup", Signature.stopDessin());
-    canvas.addEventListener("mousemove", Signature.dessiner());
-    canvas.addEventListener("touchstart", Signature.startDessin());
-    canvas.addEventListener("touchend", Signature.stopDessin());
-    canvas.addEventListener("touchmove", Signature.dessiner()); 
-    document.getElementById("effacer").addEventListener("click", nettoyer);
-}
-}
-
-document.addEventListener('DOMContentLoaded',function(){
-Signature.initCanvas();
-});
-        
-        </script>
+    </script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/freelancer.js"></script>
 </body>
