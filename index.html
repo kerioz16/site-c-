@@ -114,7 +114,8 @@
             <label class="form-label">Signature convoyeur<canvas style="border: 1px solid #999" id="sig-canvas"
                     width="200" height="150"></canvas></label>
             <button type="button" class="btnImpression" onclick="clearCanvas();" id="effacer">Effacer</button>&nbsp;
-            <button onclick="" class="btnImpression">Génerer</button>
+
+            <button  onclick=""  id="generer" class="btnImpression">Génerer</button>
             <br /><br />
             <label class="form-label">Signature client<canvas style="border: 1px solid #999" id="signature2" width="200"
                     height="150"></canvas></label>
@@ -134,7 +135,7 @@
             <label class="form-label">Signature client<canvas style="border: 1px solid #999" id="signature4" width="200"
                     height="150"></canvas></label>
             <button type="button" class="btnImpression" onclick="effacer4();" id="efface4">Effacer</button>&nbsp;
-            <button onclick="apercu();" class="btnImpression">Génerer</button>
+            <button onclick='window.location.href=""+dataUrl' class="btnImpression">Génerer</button>
 
         </form>
     </section>
@@ -264,6 +265,11 @@
         }
 
         var dataUrl = canvas.toDataURL();
+        
+        console.log(dataUrl);
+
+
+        
        
 
 
